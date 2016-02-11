@@ -1,11 +1,21 @@
-thead  > tr {
-    color:black;
+thead > tr {
+    color: black;
     font-weight: bold;
-
 }
-
-
-
 .champ, .finals, .conf, .secondrd, .firstrd, .lottery, .tbd {
     font-style: italic;
+    font-weight: lighter;
+}
+td {
+    padding-left: .5em;
+    padding-right: .5em;
+    font-weight: lighter;
+}
+.east {
+    color: red;
+    font-weight: lighter;
+}
+.west {
+    color: #00BFFF;
+    font-weight: lighter;
 }
