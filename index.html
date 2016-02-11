@@ -5,22 +5,34 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Bootstrap stylesheet -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- bootstrap widget theme -->
+    <!-- <link rel="stylesheet" href="css/theme.bootstrap.css"> -->
     <!-- External CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src="tablesorter-master/jquery-latest.js"></script>
+    <script type="text/javascript" src="tablesorter-master/jquery.tablesorter.js"></script>
+
+
+
+
 </head>
 
 <body>
     <br>
     <section>
-        <table align="center">
+        <table id="myTable" class="tablesorter" align="center">
             <thead>
                 <tr>
-                    <td>Team </td>
-                    <td> Peak </td>
-                    <td> Seasons</td>
-                    <td> Start Date </td>
-                    <td> GM Name </td>
-                    <td> Conference </td>
+                    <th>Team </th>
+                    <th> Peak </th>
+                    <th> Seasons</th>
+                    <th> Start Date </th>
+                    <th> GM Name </th>
+                    <th> Conference </th>
                 </tr>
             </thead>
             <tbody>
@@ -36,7 +48,7 @@
                 <tr>
                     <td> LA Lakers</td>
                     <td class="champ"> Championship</td>
-                    <td> 15.54</td>
+                    <td> 15.54 </td>
                     <td> 8/7/2000 </td>
                     <td> Mitch Kuphack </td>
                     <td class="west"> West</td>
@@ -44,7 +56,7 @@
                 <tr>
                     <td> San Antonio </td>
                     <td class="champ"> Championship</td>
-                    <td> 13.6</td>
+                    <td> 13.60 </td>
                     <td> 7/1/2002 </td>
                     <td> R.C. Buford </td>
                     <td class="west"> West</td>
@@ -68,7 +80,7 @@
                 <tr>
                     <td> Golden State </td>
                     <td class="champ"> Championship</td>
-                    <td> 3.78 </td>
+                    <td> 03.78 </td>
                     <td> 4/24/2012 </td>
                     <td> Bob Myers </td>
                     <td class="west"> West</td>
@@ -76,16 +88,16 @@
                 <tr>
                     <td> Oklahoma City</td>
                     <td class="finals"> Finals</td>
-                    <td> 0.0 </td>
-                    <td> 0/0/0000</td>
+                    <td> 03.66 </td>
+                    <td> 6/7/2012</td>
                     <td> Sam Presti </td>
                     <td class="west"> West</td>
                 </tr>
                 <tr>
                     <td> Cleveland </td>
                     <td class="finals"> Finals</td>
-                    <td> 0.0 </td>
-                    <td> 0/0/0000</td>
+                    <td> 01.99 </td>
+                    <td> </td>
                     <td> David Griffin </td>
                     <td class="east">East </td>
                 </tr>
@@ -268,6 +280,19 @@
             </tbody>
         </table>
     </section>
+    <p align="left">
+         All stats and numbers calculated form reddit user /u/test on 00/00/0000
+    </p>
+    <script>
+        $(document).ready(function() {
+            $("#myTable").tablesorter({
+                sortList: [
+                    [0, 0],
+                    [1, 0]
+                ]
+            });
+        });
+    </script>
 </body>
 
 </html>
