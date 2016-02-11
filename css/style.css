@@ -1,34 +1,11 @@
 thead  > tr {
-    color:blue;
+    color:black;
     font-weight: bold;
 
 }
 
 
 
-.champ {
-    color:red;
-}
-
-.finals {
-    color:purple;
-}
-
-.conf {
-    color:orange;
-}
-.secondrd {
-    color:green;
-}
-
-.firstrd {
-    color:pink;
-}
-
-.lottery {
-    color:navy;
-}
-
-.tbd {
-    color:grey;
+.champ, .finals, .conf, .secondrd, .firstrd, .lottery, .tbd {
+    font-style: italic;
 }
